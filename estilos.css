@@ -1,0 +1,357 @@
+ *{
+     margin:0;
+     padding:0;
+ }
+body{
+    margin: auto;
+    background-color:gold
+   
+}
+.header a {
+    background-color:goldenrod;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px ;
+    font-size: 33px;
+    color:gold;
+    text-decoration-color:green;
+    display:inline-block;
+    padding: 36px;
+    padding-top: 30px;
+    padding-left: 55px;
+    border:7px solid green;
+    font-weight: bold;
+}
+.header a:hover{
+    background-color:green;
+    border: 10px solid goldenrod;
+}
+
+.ventana{
+    float: right;
+        color:gold;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif;
+        font-size: 50px;
+        padding:60px;
+        display:none;
+        background-color: goldenrod;
+        position: absolute;
+        top: 500px;
+        left: 2900px;
+        border: 15px solid green;
+        border-radius:350px      
+}
+#xxx{
+    background-color: green;
+    color:red;
+    font-weight: bolder;
+    padding: 15px;
+    font-size: 40px;
+    border-radius: 50px;
+    position:absolute;
+    right: 80px;
+    top:50px
+}
+#xxx:hover{
+    background-color: gold;
+    border: 05px solid green;
+}
+#icon{
+    background-color:goldenrod;
+    width: 170px;
+    font-size: 25px;
+    text-align:center;
+    padding: 40px;
+    text-align: left;
+    padding: 25px;
+    margin-top: 10px;
+    font-weight: bolder;
+    color:green;
+    text-align: center;
+    text-decoration: none;
+    border: 10px solid green;
+    border-radius: 40px;
+}
+#icon:hover{
+    background-color:green;
+    border: 10px solid gold;
+    color: goldenrod;
+}
+#enviar{
+    margin-top: 30px;
+    margin-left: 400px;
+    background-color:green;
+    font-size: 38px;
+    font-weight: bolder;
+    color:gold;
+    text-decoration: none;
+    padding: 30px;
+    height: 200px;
+    width: 200px;
+    border: 10px solid goldenrod;
+    border-radius: 100px;
+}
+#enviar:hover{
+    background-color: goldenrod;
+    border: 15px solid green;
+}
+.login{
+       background-color:green;
+        font-size: xx-large;
+        padding: 20px;
+        height: 160px;
+        width: 160px;
+        margin-left: 60px;
+        border-radius: 25px;
+}
+.loginc{
+    float: right;
+    width: 200px;
+    background-color:goldenrod;
+    border-radius: 22px;
+    margin-left: 700px;
+}
+
+.formulario{
+    font-size: x-large;
+    padding: 0px;
+    border-radius: 40px;
+}
+
+ 
+.login :hover{
+    background-color:goldenrod;
+    border: 15px solid green;
+    border-radius: 22px;
+}   
+h3{
+    color: green;
+}
+#blogin{
+    background-color:goldenrod;
+    font-size: 35px;
+    text-align: left;
+    padding: 20px;
+    padding-top: 30px;
+    margin-top: 25px;
+    font-weight: bolder;
+    color:green;
+    text-align: center;
+    text-decoration: none;
+    border: 10px solid green;
+    border-radius: 42px;
+    
+}
+.contenedor{
+       margin: auto;
+       margin-top: 20px;
+       background-color:gold;
+       width: 90%px;
+       max-height: 1300px;
+       max-width: 1500px;
+       border: 15px solid green;
+       justify-content:first baseline;
+       font-size: 20px;
+       line-height: 30px;
+       text-align: left; 
+       border-radius: 40px;
+       padding: 10px;
+
+}.contenedor2{
+    margin: auto;
+    background-color:gold;
+    width: 60%px;
+    max-height: 1200px;
+    max-width: 1200px;
+    border: 15px solid green;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center 
+    
+
+}
+
+.contenedor > div{
+       display: block;
+       padding: 10px;      
+       
+}
+.contenedor{
+    display:grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr ;
+    grid-template-rows:100px repeat(5, auto);
+    grid-template-areas: "header    header   header    header"
+
+                         "parrafo   parrafo  imagen    imagen"
+
+                         "parrafo2  arte     arte2     parrafo3"
+                        
+                         "homero    lista    lista2    login "
+
+                         "homero    copyR    copyR     copyR";
+
+    justify-items: stretch;                                                           
+}
+.contenedor .header{
+    width: 950px;
+    height: 70px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-left: 30px;
+    padding-left: 450px;
+    background-color:gold;
+    grid-column-start: header;
+    grid-column-end: header;
+    float: right;
+    border: 10px solid green;
+    border-radius: 20px;
+}
+.contenedor .parrafo{
+    background-color: white;
+    grid-column-start: parrafo;
+    grid-column-end: parrafo;
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 20px;
+    border: 10px solid green;
+}
+
+
+.contenedor .imagen{
+    padding-left: 10px;
+    padding-top: 45px;
+    margin-top: 15px;
+    margin-left: 40px;
+    background-color:white;
+    grid-column-start: imagen;
+    grid-column-end: imagen;
+    border-radius: 40px;
+    border: 15px solid green;
+    width: 650px;
+    height:360px; 
+ }
+ .contenedor .parrafo2{
+    padding-top: 0px;
+    background-color:rgb(230, 249, 250);
+    grid-column-start: parrafo2;
+    grid-column-end: parrafo2;
+    justify-self: start;
+    align-self:stretch;
+    margin-top: 10px ;
+    margin-left: 30px;
+    padding-left: 45px;
+    border-radius: 20px;
+    border: 15px solid goldenrod;
+}
+ .contenedor .arte{
+    background-color:goldenrod;
+    width: 260px;
+    height:170px; 
+    padding:15px;
+    margin-left: 20px;
+    padding-top: 15px;
+    padding-left: 10px;
+    margin-top: 19px;
+    grid-column-start:arte;
+    grid-column-end:arte ;
+    border: 15px solid green;
+   
+ }
+ .contenedor .arte2{
+    background-color:green;
+    width: 260px;
+    height:150px; 
+    padding:30px;
+
+    padding-top: 15px;
+    margin-left: 20px;
+    padding-left: 5px;
+    margin-top: 19px;
+
+    grid-column-start:arte;
+    grid-column-end:arte ;
+    
+    border: 18px solid goldenrod;
+    
+   
+ }
+ .contenedor .parrafo3{
+    background-color:rgb(230, 249, 250);
+    grid-column-start: parrafo3;
+    grid-column-end: parrafo3;
+    grid-row-start:parrafo3 ;
+    grid-row-end: parrafo3;
+    justify-self: start;
+    align-self:center;
+    margin-top: 10px;
+    padding: 40px;
+    margin-right: 30px;
+    border-radius: 150px;
+    border: 15px solid goldenrod;
+}
+ 
+.contenedor .homero{
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: green;
+    grid-column-start: homero;
+    grid-column-end: homero;
+    grid-row-start: homero;
+    grid-row-end: homero;
+    border: 10px solid goldenrod;
+    border-radius: 40px;
+   
+}
+
+
+.contenedor .lista{
+    background-color: rgb(230, 249, 250);
+    grid-column-start: lista;
+    grid-column-end: lista;
+    padding: 10px;
+    padding-left: 40px;
+    border: 05px solid green;
+    border-radius: 30px;
+}
+.contenedor .lista2{
+    margin-left:30px;
+    padding-left: 40px;
+    background-color: rgb(230, 249, 250);
+    grid-column-start: lista2;
+    grid-column-end: lista2;
+    justify-self: start;
+    border: 05px solid green;
+    border-radius:30px;
+}
+.contenedor .login{
+    padding: 30px;
+    padding-top: 20px;
+    margin-top: 15px;
+    grid-column-start: login;
+    grid-column-end: login;
+    background-color:green;
+    border: 10px solid goldenrod;
+    border-radius: 80px;
+
+}
+.contenedor .login:hover{
+    background-color:goldenrod;
+    border: 10px solid green;
+}
+.contenedor .copyR{
+    background-color: goldenrod;
+    padding: 30px;
+    width: 1000px;
+    grid-column-start: copyR;
+    grid-column-end: copyR;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-self: center;
+    border: 10px solid green;
+    border-radius: 50px;
+
+}

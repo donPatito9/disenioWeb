@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+ <meta charset="utf-8" />
+ <meta name="viewport"content="width= initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible"content="ie-edge">
+ <link rel="stylesheet"href="estilos.css">
+ 
+ <title>EXAMEN DISEÑO WEB</title>
+  <style>
+  </style>
+ </head>
+  <body>
+
+</a>
+<div class="ventana" id="popUp">
+  <form>
+   <button id="xxx" onclick="cerrar()">X</button>
+      <div class="cerrar">
+         <label>Usuario:&nbsp;</label><br>
+             <input type="text"placeholder ="usuario" ><br>
+             <label >Contraseña:</label><br>
+             <input type="text" placeholder="contraseña"><br>
+         
+          <button id="icon"  onclick="Ingresar()"id="icon">Ingresar</button>
+      </div>
+  </div>        
+      </form> 
+   <div class="contenedor">
+      <div class="header"> <header>
+         <a class="inicio" href="inicio.html"type="button">Inicio</a>
+         <a class="trabajos"href="procesos.html"type="button">Procesos</a>
+         <a class="articulos"href="productos.html"type="button">Productos</a>
+         <a class="contacto"href="contacto.html"type="button">Contacto</a> 
+  </header></div>
+   <div class="parrafo">
+      <h1>Productos</h1><br><br>
+         <p>&nbsp;&nbsp;En este local es posible 
+            comprar cervezas de los tres tipos que poseen:
+            Rubia,Ámbar y Negra; junto con algunos productos de mercadeo 
+            relacionados a la marca.
+            Ademas puede degustar  su bebida,
+            junto a una pequeña carta de platos,
+            permite a los comensales disfrutar de madrigajes sabroso y llenos de historia.
+         <p> 
+   </div>
+   <div class="imagen"><img src="IMAGE.SRC.jpeg"/> </div>
+   <div class="lista" style="margin-left: -350px;margin-top: 20px;">
+      <ul ><h3>Productos</h3>
+         <li><a>Suprema old school</a></li>
+         <li><a>Suprema Beer miel</a>  </li>
+         <li><a>Suprema Beer limon Jengibre </a ></li>
+         <li><a>Suprema tradicional casera</a></li>
+         <li><a>Suprema Malta con Huevo</a>  </li>
+         <li><a>Suprema rubia o negra Artesanal</a> </li>
+      </ul>
+  
+   </div>
+   <div class="foto"><div class="arte"><img src="artesanal.jpg"></div></div><br>
+      <div class="lista" style="margin-left: -350px;margin-top: 20px;">
+         <ul ><h3>Platos/Menu</h3>
+            <li><a>Pernil criollo c/agregado a elección</a></li>
+            <li><a>Pollo con Agrgado a elecció</a>  </li>
+            <li><a>Legumbres de la Zona con Longaniza </a> </li>
+            <li><a>Palta reina Suprema</a></li>
+            <li><a>Suprema Pastas/lazaña,Ñoqui,ravioles</a>  </li>
+            <li><a>Suprema Paila Marina con cerveza de la casa</a> </li>
+         </ul>
+      </div>
+   <div class="login"> 
+            <button id="blogin" onclick="abrir()">Login&nbsp;</button>
+   </div>
+   
+   <div class="copyR" ><footer >
+      <h4>Copyrigth Robinson C. 2021-2025 your website inc. all Rigths reserved By @IPLACEX.CL </h4>
+     </footer></div>
+<script>
+      function abrir(){
+      document.getElementById("popUp").style.display="block";
+      }
+      function cerrar(){
+      document.getElementById("popUp").style.display="none";
+      }
+      function Ingresar(){
+      document.getElementById("popUp").style.display="none";
+      }
+</script>
+</div>
+</body>
+</html>
